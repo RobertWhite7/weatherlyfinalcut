@@ -1,0 +1,34 @@
+.ds-sunny{
+    background-image: url("http://feelgrafix.com/data_images/out/15/899287-sunny-day.jpg");
+ 
+}
+.ds-rain{
+    background-image: url("http://previews.123rf.com/images/merzavka/merzavka1003/merzavka100300013/6605738-blue-water-bubbles-on-the-window-for-background--Stock-Photo.jpg");
+
+}
+.ds-fog{
+    background-image: url("http://img.photobucket.com/albums/v58/PixelMagic/Blog%20Images/fog_element.jpg");
+ 
+}
+.ds-snow{
+    background-image: url("http://cdn.wallpapersafari.com/23/84/nlTirz.jpg");
+
+}
+.ds-sleet{
+    background-image: url("http://previews.123rf.com/images/eugenesergeev/eugenesergeev1303/eugenesergeev130300070/18534293-Pedestrians-footprints-in-road-blue-ice-Street-sleet-background-Stock-Photo.jpg");
+
+}
+.ds-cloudy{
+    background-image: url("http://img12.deviantart.net/d5ad/i/2015/179/5/d/clouds_background_landscape_2__stock__by_evil0verlady-d8z3636.jpg");
+
+}
+.card{
+    border-radius: 5px; 
+    margin: 3px; 
+    height: 400px; 
+    text-align: center; 
+    color: white;
+    text-align: right;
+    font-size: 20px;
+
+}
