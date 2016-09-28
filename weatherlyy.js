@@ -18,7 +18,13 @@ function darksky_complete(result) {
     
 
 }
-
+   function toggle_div(id){
+       var divElement = document.getElementById(id);
+       if(divElement.style.display == 'none')
+         divElement.style.display = 'block';
+         else
+         divElement.style.display = 'none';
+   }
 
 function lookupLatLong_Complete(result) {
     
@@ -79,6 +85,10 @@ function lookupWeatherForPostalCode_Click() {
 
 }
 
+    function hide() { 
+  $("#cards").empty();
+    }
+
 function weatherTemplate() {
  
     var template = $("#templateDiv").html(); 
@@ -124,15 +134,10 @@ var html = weatherTemplate;
 $("#cards").append(html);
 }
 
-        
-
-
 $(function () {
     $("#postButton").on("click", lookupWeatherForPostalCode_Click)
-
+    $("#cards").on("click", hide)
 });
- 
-
 
 
 
