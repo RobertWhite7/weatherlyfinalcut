@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Local Weather</a>
+                    <a class="navbar-brand" href="#">Weatherly</a>
                 </div>
             </div>
         </nav>
@@ -34,10 +34,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    Lookup Weather for Postal Code:
+                    Lookup Weather:
                 </div>
                 <div class="col-md-8">
-                    <input type="text" id="postalCode" placeholder="Enter Zip Code Here"></input>
+                    <input type="text" id="postalCode" placeholder="City or Zip"></input>
                     <button id="postButton" type="button" class="btn btn-default">Lookup</button>
                 </div>
             </div>
@@ -52,12 +52,29 @@
                 <div class="col-md-3" style=" height: 80%;margin: 20px; border-radius: 10px; border: 1px solid #333333; background-image: url(@@help@@);">
                     <div class="row" style="text-align: center;" style="height: 100%; width: 100%; padding: 25px 10px;"
                         /></div>
-                    <div class="row" style="padding: 0 10px; text-align: center; border-top: 2px solid black; border-bottom: 2px solid black;">@@city@@</div>
-                    <div class="row" style="padding: 15px 10px; font-size: 40px; text-align: center;">@@temperature@@</div>
+                    <div class="row" style="border-radius: 5px; margin: 3px; text-align: center; color: white;text-align: right;font-size: 20px;
+                     padding: 0px 10px; text-align: center; border-top: 2px solid black; border-bottom: 2px solid black;">@@city@@</div>
+                    <br/>
+                     <br/>
+                     <br/>
+                    <div class="row" style="border-radius: 5px; margin: 3px; text-align: center; color: white; text-align: right;
+                     padding: 15px 10px; font-size: 50px; text-align: center;">@@temperature@@</div>
+                        <br/>
+                     <br/>
+                         <br/>
+                     <br/>
          
-                    <div class="row" style="padding: 15px 10px; text-align: center;">@@icon@@</div>
+                    <div class="row" style="border-radius: 5px; margin: 3px; text-align: center; color: white; text-align: right;font-size: 25px;
+                     padding: 15px 10px; text-align: center;">@@icon@@</div>
+                            <br/>
+                     <br/>
+                         <br/>
+                     <br/>
+                     <hr>
+                  
                      
-                    <div class="row" style="padding: 15px 10px; text-align: center;">@@latitude@@, @@longitude@@</div>
+                    <div class="row" style="border-radius: 5px; margin: 3px; text-align: center; color: white; text-align: right; font-size: 20px;
+                     padding: 15px 10px; text-align: center;">@@latitude@@, @@longitude@@</div>
                   
                 </div>
             </div>
