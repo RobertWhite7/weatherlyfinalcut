@@ -1,9 +1,9 @@
-var time;
+
 var icon;
 var latitude;
 var longitude;
 var city;
-var tempature;
+var temperature;
 
 function darksky_complete(result) {
     console.log(result.latitude);
@@ -11,9 +11,10 @@ function darksky_complete(result) {
     console.log(result.timezone);
     console.log(result.currently.icon);
     console.log(result.currently.time);
-    console.log(result.currently.tempature);
+    console.log(result.currently.temperature);
     icon=result.currently.icon
-    tempature =result.currently.tempature
+    temperature =result.currently.temperature
+    generateCard();
     
 
 }
@@ -78,7 +79,7 @@ function lookupWeatherForPostalCode_Click() {
 
 }
 
-function generateCard() {
+function weatherTemplate() {
  
     var template = $("#templateDiv").html(); 
 
@@ -93,7 +94,7 @@ function generateCard() {
              case "wind":
              case "partly-cloudy-day":
              case "partly-cloudy-night":
-               template = template.replace("@@help@@", icon);
+               template = template.replace("@@help@@", icon + ".png" );
                break;
                default:
                  template = template.replace("@@help@@", "http://wallpapercave.com/wp/4W2pw5V.jpg");
@@ -102,12 +103,12 @@ function generateCard() {
                  
 
     
-    template = template.replace("@@time@@", time);
+   
     template = template.replace("@@icon@@", icon);
     template = template.replace("@@latitude@@", latitude);
     template = template.replace("@@longitude@@", longitude);
     template = template.replace("@@city@@", city);
-    template = template.replace("@@tempature@@", tempature);
+    template = template.replace("@@temperature@@", temperature);
     
     
 
@@ -119,7 +120,7 @@ function generateCard() {
 
 // The divs will automatically wrap because of Bootstrap knowing it's a col-md-3.
 function generateCard(result){
-var html = generateCard;
+var html = weatherTemplate;
 $("#cards").append(html);
 }
 
@@ -128,8 +129,10 @@ $("#cards").append(html);
 
 $(function () {
     $("#postButton").on("click", lookupWeatherForPostalCode_Click)
+
 });
  
+
 
 
 
